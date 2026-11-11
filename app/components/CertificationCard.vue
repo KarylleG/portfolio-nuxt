@@ -17,7 +17,7 @@ const emit = defineEmits<{
   <article class="certification-card">
     <h3>{{ title }}</h3>
     <button class="certificate-image-button" type="button" @click="emit('view', image, title)">
-      <img :src="`/pictures/${image}`" :alt="alt">
+      <img :src="image" :alt="alt">
     </button>
     <h3>Verify Certificate: {{ verification }}</h3>
     <a class="portfolio-button btn btn-neutral" :href="verifyUrl" target="_blank" rel="noopener noreferrer">

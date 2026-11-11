@@ -12,14 +12,14 @@ useSeoMeta({
 })
 
 const professionalCertificates = [
-  { title: 'Microsoft Office Specialist', image: 'gimalalud-certification-ms-word-associate.jpg', alt: 'MOS Certificate', verification: 'wAPrS-2FN4', verifyUrl: 'https://www.certiport.com/portal/pages/credentialverification.aspx', provider: 'Certiport' },
-  { title: 'Microsoft Office Specialist', image: 'gimalalud-certification-ms-excel-associate.jpg', alt: 'MOS Certificate', verification: 'E7vR-4WVv', verifyUrl: 'https://www.certiport.com/portal/pages/credentialverification.aspx', provider: 'Certiport' },
-  { title: 'Database', image: 'gimalalud-certification-database.jpg', alt: 'Database Certificate', verification: 'w6phv-48e2', verifyUrl: 'https://www.certiport.com/portal/pages/credentialverification.aspx', provider: 'Certiport' }
+  { title: 'Microsoft Office Specialist', image: '/pictures/gimalalud-certification-ms-word-associate.jpg', alt: 'MOS Certificate', verification: 'wAPrS-2FN4', verifyUrl: 'https://www.certiport.com/portal/pages/credentialverification.aspx', provider: 'Certiport' },
+  { title: 'Microsoft Office Specialist', image: '/pictures/gimalalud-certification-ms-excel-associate.jpg', alt: 'MOS Certificate', verification: 'E7vR-4WVv', verifyUrl: 'https://www.certiport.com/portal/pages/credentialverification.aspx', provider: 'Certiport' },
+  { title: 'Database', image: '/pictures/gimalalud-certification-database.jpg', alt: 'Database Certificate', verification: 'w6phv-48e2', verifyUrl: 'https://www.certiport.com/portal/pages/credentialverification.aspx', provider: 'Certiport' }
 ]
 
 const courseCertificates = [
-  { title: 'Software Engineering', image: 'gimalalud-certification-saylor-software-engineering.jpg', alt: 'Software Engineering Certificate', verification: '8335351152KG', verifyUrl: 'https://learn.saylor.org/admin/tool/certificate/index.php', provider: 'Saylor' },
-  { title: 'Modern Database', image: 'gimalalud-certification-saylor-modern-database.jpg', alt: 'Modern Database Certificate', verification: '9868071098KG', verifyUrl: 'https://learn.saylor.org/admin/tool/certificate/index.php', provider: 'Saylor' }
+  { title: 'Software Engineering', image: '/pictures/gimalalud-certification-saylor-software-engineering.jpg', alt: 'Software Engineering Certificate', verification: '8335351152KG', verifyUrl: 'https://learn.saylor.org/admin/tool/certificate/index.php', provider: 'Saylor' },
+  { title: 'Modern Database', image: '/pictures/gimalalud-certification-saylor-modern-database.jpg', alt: 'Modern Database Certificate', verification: '9868071098KG', verifyUrl: 'https://learn.saylor.org/admin/tool/certificate/index.php', provider: 'Saylor' }
 ]
 
 const lightboxImage = ref<string | null>(null)
@@ -35,12 +35,6 @@ const closeLightbox = () => {
   lightboxTitle.value = ''
 }
 
-const handleKeydown = (event: KeyboardEvent) => {
-  if (event.key === 'Escape') closeLightbox()
-}
-
-onMounted(() => document.addEventListener('keydown', handleKeydown))
-onBeforeUnmount(() => document.removeEventListener('keydown', handleKeydown))
 </script>
 
 <template>

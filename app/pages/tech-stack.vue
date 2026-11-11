@@ -9,17 +9,17 @@ useSeoMeta({
 })
 
 const technologies = [
-  { name: 'Java', image: 'java-logo.png', alt: 'Java Logo', category: 'frontend' as const },
-  { name: 'HTML', image: 'html-logo.png', alt: 'HTML Logo', category: 'frontend' as const },
-  { name: 'CSS', image: 'css-logo.png', alt: 'CSS Logo', category: 'frontend' as const },
-  { name: 'JavaScript', image: 'javascript-logo.png', alt: 'JavaScript Logo', category: 'frontend' as const },
-  { name: 'SQL', image: 'mysql-logo.png', alt: 'SQL Logo', category: 'database' as const },
-  { name: 'PostgreSQL', image: 'postgresql-logo.png', alt: 'PostgreSQL Logo', category: 'database' as const },
-  { name: 'VS Code', image: 'visual-studio-code-logo.png', alt: 'Visual Studio Code Logo', category: 'devtools' as const },
-  { name: 'Android Studio', image: 'android-studio-logo.png', alt: 'Android Studio Logo', category: 'devtools' as const },
-  { name: 'SSMS', image: 'sql-server-management-studio-logo.png', alt: 'SQL Server Management Studio Logo', category: 'devtools' as const },
-  { name: 'Git', image: 'git-logo.png', alt: 'Git Logo', category: 'devtools' as const },
-  { name: 'GitHub', image: 'github-logo.png', alt: 'GitHub Logo', category: 'devtools' as const }
+  { name: 'Java', image: '/pictures/java-logo.png', alt: 'Java Logo', category: 'frontend' as const },
+  { name: 'HTML', image: '/pictures/html-logo.png', alt: 'HTML Logo', category: 'frontend' as const },
+  { name: 'CSS', image: '/pictures/css-logo.png', alt: 'CSS Logo', category: 'frontend' as const },
+  { name: 'JavaScript', image: '/pictures/javascript-logo.png', alt: 'JavaScript Logo', category: 'frontend' as const },
+  { name: 'SQL', image: '/pictures/mysql-logo.png', alt: 'SQL Logo', category: 'database' as const },
+  { name: 'PostgreSQL', image: '/pictures/postgresql-logo.png', alt: 'PostgreSQL Logo', category: 'database' as const },
+  { name: 'VS Code', image: '/pictures/visual-studio-code-logo.png', alt: 'Visual Studio Code Logo', category: 'devtools' as const },
+  { name: 'Android Studio', image: '/pictures/android-studio-logo.png', alt: 'Android Studio Logo', category: 'devtools' as const },
+  { name: 'SSMS', image: '/pictures/sql-server-management-studio-logo.png', alt: 'SQL Server Management Studio Logo', category: 'devtools' as const },
+  { name: 'Git', image: '/pictures/git-logo.png', alt: 'Git Logo', category: 'devtools' as const },
+  { name: 'GitHub', image: '/pictures/github-logo.png', alt: 'GitHub Logo', category: 'devtools' as const }
 ]
 
 const categoryLabels = [
