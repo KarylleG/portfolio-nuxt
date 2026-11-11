@@ -3,9 +3,6 @@ import daisyui from 'daisyui'
 export default {
   content: [
     './app/**/*.{vue,js,ts}',
-    './components/**/*.{vue,js,ts}',
-    './layouts/**/*.vue',
-    './pages/**/*.vue',
     './error.vue'
   ],
   theme: {
