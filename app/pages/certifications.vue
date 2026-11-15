@@ -40,7 +40,7 @@ const closeLightbox = () => {
 <template>
   <div class="page-section certifications-page">
     <PageTitle text="Professional Certifications" />
-    <section class="certification-grid mt-6 mb-16 grid auto-rows-fr grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3">
+    <section class="certification-grid mt-6 mb-16 flex flex-wrap items-stretch justify-center gap-8">
       <CertificationCard
         v-for="certificate in professionalCertificates"
         :key="certificate.image"
@@ -49,7 +49,7 @@ const closeLightbox = () => {
       />
     </section>
     <PageTitle text="Course Certificates" />
-    <section class="certification-grid mt-6 grid auto-rows-fr grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3">
+    <section class="certification-grid mt-6 flex flex-wrap items-stretch justify-center gap-8">
       <CertificationCard
         v-for="certificate in courseCertificates"
         :key="certificate.image"

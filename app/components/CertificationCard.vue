@@ -14,9 +14,9 @@ const emit = defineEmits<{
 </script>
 
 <template>
-  <article class="card certification-card mx-auto h-full w-96 max-w-full border border-base-300 bg-base-100 shadow-sm transition-shadow duration-200 hover:shadow-md">
+  <article class="card certification-card mx-auto h-full w-96 max-w-full border border-base-300 bg-base-100 shadow-sm transition-shadow duration-200 hover:shadow-md sm:w-[calc((100%-2rem)/2)] xl:w-96">
     <figure class="px-10 pt-10">
-      <button class="h-56 w-full cursor-zoom-in rounded-xl border-0 bg-base-200 p-3 transition-colors duration-200 hover:bg-base-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" type="button" @click="emit('view', image, title)">
+      <button class="h-56 w-full cursor-pointer rounded-xl border-0 bg-base-200 p-3 transition-colors duration-200 hover:bg-base-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" type="button" @click="emit('view', image, title)">
         <img :src="image" :alt="alt" class="h-full w-full rounded-lg object-contain">
       </button>
     </figure>
