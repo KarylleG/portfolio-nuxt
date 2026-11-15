@@ -16,8 +16,6 @@ const technologies = [
   { name: 'SQL', image: '/pictures/mysql-logo.png', alt: 'SQL Logo', category: 'database' as const },
   { name: 'PostgreSQL', image: '/pictures/postgresql-logo.png', alt: 'PostgreSQL Logo', category: 'database' as const },
   { name: 'VS Code', image: '/pictures/visual-studio-code-logo.png', alt: 'Visual Studio Code Logo', category: 'devtools' as const },
-  { name: 'Android Studio', image: '/pictures/android-studio-logo.png', alt: 'Android Studio Logo', category: 'devtools' as const },
-  { name: 'SSMS', image: '/pictures/sql-server-management-studio-logo.png', alt: 'SQL Server Management Studio Logo', category: 'devtools' as const },
   { name: 'Git', image: '/pictures/git-logo.png', alt: 'Git Logo', category: 'devtools' as const },
   { name: 'GitHub', image: '/pictures/github-logo.png', alt: 'GitHub Logo', category: 'devtools' as const }
 ]
