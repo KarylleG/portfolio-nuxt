@@ -96,6 +96,7 @@ a {
 .about-section + .page-title {
   margin-top: 30px;
   margin-bottom: 40px;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -362,6 +363,7 @@ a {
 }
 
 .about-text .page-title {
+  font-weight: bold;
   text-align: left;
 }
 
@@ -422,6 +424,10 @@ a {
   font-family: 'Inter', sans-serif;
   text-align: center;
   line-height: 1.5;
+}
+
+.tech-intro .page-title {
+  font-weight: bold;
 }
 
 .tech-legends {
@@ -492,6 +498,7 @@ a {
 
 .certifications-page > .page-title {
   padding-top: 5px;
+  font-weight: bold;
 }
 
 .certifications {
@@ -612,6 +619,7 @@ a {
 }
 
 .contact-text .page-title {
+  font-weight: bold;
   text-align: left;
 }
 
