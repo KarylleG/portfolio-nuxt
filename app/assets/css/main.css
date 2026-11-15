@@ -871,6 +871,11 @@ a {
     padding: 35px 0;
   }
 
+  .about-text {
+    margin-inline: auto;
+    text-align: center;
+  }
+
   .about-text .page-title,
   .contact-text .page-title {
     text-align: center;
