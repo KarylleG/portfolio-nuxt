@@ -677,7 +677,7 @@ a {
 .portfolio-mobile-menu a:hover,
 .portfolio-mobile-menu a:focus-visible,
 .portfolio-mobile-menu a:active {
-  background: rgba(255, 255, 255, 0.1);
+  background: #5A5A5A;
   color: #FFFFFF;
 }
 
@@ -736,7 +736,6 @@ a {
   width: 100%;
   box-sizing: border-box;
   justify-content: center;
-  transition: all 0.2s ease;
 }
 
 .portfolio-mobile-menu .contact-link:hover,
@@ -754,6 +753,10 @@ a {
   .hobby-card,
   .tech-card {
     transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .portfolio-mobile-menu .contact-link {
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
   }
 }
 
