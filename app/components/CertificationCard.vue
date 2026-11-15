@@ -14,17 +14,17 @@ const emit = defineEmits<{
 </script>
 
 <template>
-  <article class="card bg-base-100 w-96 shadow-sm certification-card">
+  <article class="card certification-card mx-auto h-full w-96 max-w-full bg-base-100 shadow-sm">
     <figure class="px-10 pt-10">
-      <button class="certificate-image-button" type="button" @click="emit('view', image, title)">
-        <img :src="image" :alt="alt" class="rounded-xl">
+      <button class="h-56 w-full cursor-zoom-in border-0 bg-transparent p-0" type="button" @click="emit('view', image, title)">
+        <img :src="image" :alt="alt" class="h-full w-full rounded-xl object-contain">
       </button>
     </figure>
     <div class="card-body items-center text-center">
       <h2 class="card-title">{{ title }}</h2>
       <p>Issued by {{ provider }}</p>
       <p>Verification code: {{ verification }}</p>
-      <div class="card-actions">
+      <div class="card-actions mt-auto">
         <a class="btn btn-primary" :href="verifyUrl" target="_blank" rel="noopener noreferrer">
           Verify
         </a>

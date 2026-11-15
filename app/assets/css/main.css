@@ -79,20 +79,6 @@ a {
   font-family: 'Inter', sans-serif;
 }
 
-.certification-card .certificate-image-button {
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-}
-
-.certification-card .portfolio-button {
-  width: 220px;
-  height: 40px;
-  min-height: 40px;
-  margin-bottom: 30px;
-}
-
 .about-section + .page-title {
   margin-top: 30px;
   margin-bottom: 40px;
@@ -121,14 +107,6 @@ a {
 
   .tech-legend h4 {
     font-size: 14px;
-  }
-
-  .certifications {
-    padding: 15px 10px;
-  }
-
-  .certification-card img {
-    width: 90%;
   }
 
   .contact-section {
@@ -176,25 +154,6 @@ a {
   .tech-grid {
     justify-content: center;
     gap: 20px;
-  }
-
-  .certifications {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 20px;
-    text-align: center;
-  }
-
-  .certification-card {
-    max-width: 100%;
-  }
-
-  .certification-card img {
-    width: 90%;
-  }
-
-  .certification-card h3 {
-    font-size: 20px;
   }
 
   .navbar-burger {
@@ -501,46 +460,6 @@ a {
   font-weight: bold;
 }
 
-.certifications {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  padding-top: 25px;
-  flex-wrap: wrap;
-}
-
-.certification-card {
-  display: flex;
-  width: 100%;
-  max-width: 550px;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  color: #E0E0E0;
-  font-family: 'Inter', sans-serif;
-  text-align: center;
-}
-
-.certification-card h3 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 25px;
-}
-
-.certificate-image-button {
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-}
-
-.certificate-image-button img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.certificate-image-button img:hover {
-  transform: scale(1.08);
-}
-
 .lightbox {
   display: flex;
   position: fixed;
@@ -836,10 +755,6 @@ a {
   .tech-card {
     transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
   }
-
-  .certificate-image-button img {
-    transition: transform 0.3s ease;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -888,9 +803,5 @@ a {
 
   .social-links {
     margin-top: 0;
-  }
-
-  .certification-card {
-    max-width: 90%;
   }
 }
