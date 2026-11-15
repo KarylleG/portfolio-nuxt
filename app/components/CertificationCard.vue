@@ -22,10 +22,11 @@ const emit = defineEmits<{
     </figure>
     <div class="card-body items-center text-center">
       <h2 class="card-title">{{ title }}</h2>
-      <p>Verify Certificate: {{ verification }}</p>
+      <p>Issued by {{ provider }}</p>
+      <p>Verification code: {{ verification }}</p>
       <div class="card-actions">
         <a class="btn btn-primary" :href="verifyUrl" target="_blank" rel="noopener noreferrer">
-          Verify at {{ provider }} →
+          Verify
         </a>
       </div>
     </div>
