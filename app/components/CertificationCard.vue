@@ -20,7 +20,7 @@ const emit = defineEmits<{
       <img :src="image" :alt="alt">
     </button>
     <h3>Verify Certificate: {{ verification }}</h3>
-    <a class="portfolio-button btn btn-neutral" :href="verifyUrl" target="_blank" rel="noopener noreferrer">
+    <a class="portfolio-button" :href="verifyUrl" target="_blank" rel="noopener noreferrer">
       Verify at {{ provider }} →
     </a>
   </article>
