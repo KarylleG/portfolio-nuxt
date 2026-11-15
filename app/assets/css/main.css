@@ -682,7 +682,7 @@ a {
 /* DaisyUI navbar structure with the portfolio's existing visual style. */
 .portfolio-navbar {
   min-height: 65px;
-  padding: 0 20px;
+  padding: 0 16px;
   background: #404040;
   color: #E0E0E0;
   font-family: 'Inter', sans-serif;
@@ -719,8 +719,7 @@ a {
   background: transparent;
 }
 
-.portfolio-nav-links a,
-.portfolio-mobile-menu a {
+.portfolio-nav-links a {
   display: block;
   margin: 5px;
   border-radius: 5px;
@@ -731,11 +730,35 @@ a {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.portfolio-mobile-menu li {
+  width: 100%;
+}
+
+.portfolio-mobile-menu a {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 6px;
+  padding: 8px 12px;
+  color: #E0E0E0;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
 .portfolio-nav-links a:hover,
 .portfolio-nav-links a.router-link-active,
-.portfolio-mobile-menu a:hover,
 .portfolio-mobile-menu a.router-link-active {
   background: #5A5A5A;
+  color: #FFFFFF;
+}
+
+.portfolio-mobile-menu a:hover,
+.portfolio-mobile-menu a:focus-visible,
+.portfolio-mobile-menu a:active {
+  background: rgba(255, 255, 255, 0.1);
   color: #FFFFFF;
 }
 
@@ -753,12 +776,18 @@ a {
   color: #FFFFFF;
 }
 
+.portfolio-navbar .mobile-nav {
+  position: static;
+}
+
 .portfolio-mobile-menu {
   position: absolute;
   top: 65px;
-  left: -20px;
+  left: 0;
+  right: 0;
   z-index: 1001;
-  width: 100vw;
+  width: auto;
+  box-sizing: border-box;
   border-radius: 0;
   padding: 10px;
   background: #5A5A5A;
@@ -781,6 +810,25 @@ a {
 .portfolio-navbar .contact-link.router-link-active {
   background: #5A5A5A;
   color: #FFFFFF;
+}
+
+.portfolio-mobile-menu .contact-link {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.portfolio-mobile-menu .contact-link:hover,
+.portfolio-mobile-menu .contact-link:focus-visible {
+  background: #5A5A5A;
+  color: #FFFFFF;
+}
+
+.portfolio-mobile-menu .contact-link:active {
+  background: #7D7D7D;
+  transform: scale(0.98);
 }
 
 @media (prefers-reduced-motion: no-preference) {
