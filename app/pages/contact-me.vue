@@ -4,7 +4,7 @@ useSeoMeta({
   description: 'Connect with Karylle Gimalalud on LinkedIn or GitHub.',
   ogTitle: 'Contact Me | Karylle Gimalalud',
   ogDescription: 'Connect with Karylle Gimalalud on LinkedIn or GitHub.',
-  ogImage: '/pictures/gimalalud-website-logo.svg',
+  ogImage: '/pictures/gimalalud-website-logo.png',
   twitterCard: 'summary'
 })
 </script>

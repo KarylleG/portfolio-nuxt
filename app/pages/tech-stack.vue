@@ -4,7 +4,7 @@ useSeoMeta({
   description: 'Technologies and development tools Karylle Gimalalud has experience with.',
   ogTitle: 'Tech Stack | Karylle Gimalalud',
   ogDescription: 'Technologies and development tools Karylle Gimalalud has experience with.',
-  ogImage: '/pictures/gimalalud-website-logo.svg',
+  ogImage: '/pictures/gimalalud-website-logo.png',
   twitterCard: 'summary'
 })
 

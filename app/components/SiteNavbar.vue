@@ -36,7 +36,7 @@ const closeMenu = () => {
       </div>
 
       <NuxtLink class="logo portfolio-logo" to="/" @click="closeMenu">
-        <img src="/pictures/gimalalud-website-logo.svg" alt="Karylle logo">
+        <img src="/pictures/gimalalud-website-logo.png" alt="Karylle logo">
         <span>Karylle</span>
       </NuxtLink>
     </div>
