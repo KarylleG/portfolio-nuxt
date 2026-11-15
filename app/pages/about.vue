@@ -28,7 +28,7 @@ const hobbies = [
   <div class="page-section">
     <section class="about-section">
       <div class="about-image">
-        <img src="/pictures/about-me-profile.png" alt="About Me Picture">
+        <img src="/pictures/about-me-profile.png" alt="About Me">
       </div>
       <div class="about-text">
         <PageTitle text="About Me" />
