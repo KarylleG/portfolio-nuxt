@@ -56,15 +56,8 @@ a {
   z-index: 1000;
   width: 100%;
   background: #404040;
-}
-
-.navdiv {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 65px;
-  padding: 0 20px;
-  flex-wrap: wrap;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
 }
 
 .logo {
@@ -72,6 +65,7 @@ a {
   align-items: center;
   gap: 8px;
   color: #E0E0E0;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -80,212 +74,9 @@ a {
   height: 50px;
 }
 
-.nav-links {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  flex-wrap: wrap;
-}
-
-.nav-links a {
-  display: block;
-  margin: 5px;
-  padding: 10px 15px;
-  color: #E0E0E0;
-  transition: 0.3s ease;
-}
-
-.nav-links a:hover,
-.nav-links a.router-link-active:not(.contact-link) {
-  border-radius: 5px;
-  background-color: #7D7D7D;
-}
-
-.nav-links .contact-link {
-  border-radius: 5px;
-  background-color: #2B2B2B;
-}
-
-.navbar-burger {
-  display: none;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-}
-
-.navbar-burger span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px;
-  background: #E0E0E0;
-}
-
-@media (max-width: 768px) {
-  .navbar-burger {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 65px;
-    left: 0;
-    width: 100%;
-    flex-direction: column;
-    background: #5A5A5A;
-  }
-
-  .nav-links.is-active {
-    display: flex;
-  }
-}
-
-/* Reference portfolio layout overrides */
-.portfolio-layout {
-  min-height: 100vh;
-}
-
-.portfolio-content {
-  z-index: 1;
-}
-
-.navbar {
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
-}
-
-.logo {
-  font-size: 15px;
-}
-
-.portfolio-button.btn,
-.nav-links .contact-link {
-  border: 0;
-  border-radius: 4px;
-  background: #404040;
-  color: #E0E0E0;
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
-  transition: 0.3s ease;
-}
-
-.portfolio-button.btn:hover,
-.nav-links .contact-link:hover {
-  border-radius: 4px;
-  background: #7D7D7D;
-  color: #FFFFFF;
-}
-
-.home-hero {
-  min-height: 100vh;
-}
-
-.home-hero img {
-  margin-bottom: 5px;
-}
-
-.home-hero h3 {
-  font-family: 'Inter', sans-serif;
-}
-
-.hero-links {
-  gap: 0;
-  width: auto;
-}
-
-.hero-links .portfolio-button {
-  width: 200px;
-  height: 35px;
-  min-height: 35px;
-  margin-top: 10px;
-  padding: 0;
-}
-
-.page-section {
-  padding: 0;
-}
-
-.about-section {
-  padding: 100px 20px 0;
-}
-
-.about-text {
-  width: 100%;
-  font-family: 'Inter', sans-serif;
-  text-align: left;
-}
-
-.about-text p,
-.contact-text p {
-  font-size: 17px;
-}
-
-.about-section + .page-title {
-  margin-top: 30px;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.hobby-card {
-  font-family: 'Inter', sans-serif;
-}
-
-.hobby-card h3 {
-  padding-top: 3px;
-  font-weight: bold;
-  transition: 0.3s ease;
-}
-
-.hobby-card:hover h3 {
-  color: #FFFFFF;
-}
-
-.hobbies {
-  margin-bottom: 100px;
-}
-
-.tech-page {
-  padding: 0 20px;
-}
-
-.tech-intro {
-  padding-top: 85px;
-  font-family: 'Inter', sans-serif;
-}
-
-.tech-legends {
-  align-items: center;
-}
-
 .tech-legend h4 {
   color: #E0E0E0;
   font-family: 'Inter', sans-serif;
-}
-
-.tech-grid {
-  padding: 0 20px;
-  margin-bottom: 100px;
-}
-
-.tech-card {
-  font-family: 'Inter', sans-serif;
-}
-
-.tech-card:hover {
-  transform: scale(1.05);
-}
-
-.certifications-page > .page-title {
-  padding-top: 50px;
-}
-
-.certification-card {
-  font-family: 'Inter', sans-serif;
-}
-
-.certification-card h3 {
-  font-size: 25px;
 }
 
 .certification-card .certificate-image-button {
@@ -302,30 +93,10 @@ a {
   margin-bottom: 30px;
 }
 
-.contact-section {
-  min-height: calc(100vh - 150px);
-  padding: 0 20px;
-}
-
-.contact-text {
-  font-family: 'Inter', sans-serif;
-}
-
-.contact-text p {
-  text-align: left;
-}
-
-.social-links {
-  align-items: center;
-  margin-top: 65px;
-}
-
-.social-link {
-  height: 35px;
-  margin: 5px;
-  padding: 0;
-  font-family: 'Inter', sans-serif;
-  font-size: 15px;
+.about-section + .page-title {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 @media (max-width: 768px) and (min-width: 321px) {
@@ -367,6 +138,7 @@ a {
   .contact-text {
     width: 100%;
     max-width: 500px;
+    font-family: 'Inter', sans-serif;
   }
 
   .contact-text p {
@@ -515,11 +287,13 @@ a {
   background: #404040;
   color: #E0E0E0;
   cursor: pointer;
-  transition: 0.3s ease;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .portfolio-button:hover {
-  background: #7D7D7D;
+  background: #5A5A5A;
   color: #FFFFFF;
 }
 
@@ -536,6 +310,7 @@ a {
 .home-hero img {
   width: 230px;
   height: 230px;
+  margin-bottom: 5px;
   border-radius: 50%;
   padding: 10px;
 }
@@ -546,6 +321,7 @@ a {
 
 .home-hero h3 {
   margin-bottom: 10px;
+  font-family: 'Inter', sans-serif;
 }
 
 .hero-links {
@@ -553,6 +329,14 @@ a {
   flex-direction: column;
   gap: 10px;
   width: 200px;
+}
+
+.hero-links .portfolio-button {
+  width: 200px;
+  height: 35px;
+  min-height: 35px;
+  margin-top: 10px;
+  padding: 0;
 }
 
 .about-section {
@@ -570,8 +354,11 @@ a {
 }
 
 .about-text {
+  width: 100%;
   max-width: 500px;
   color: #E0E0E0;
+  font-family: 'Inter', sans-serif;
+  text-align: left;
 }
 
 .about-text .page-title {
@@ -590,6 +377,7 @@ a {
   justify-content: center;
   gap: 20px;
   margin-top: 40px;
+  margin-bottom: 100px;
   flex-wrap: wrap;
 }
 
@@ -599,7 +387,7 @@ a {
   padding: 20px;
   background: #404040;
   color: #E0E0E0;
-  transition: 0.3s ease;
+  font-family: 'Inter', sans-serif;
 }
 
 .hobby-card:hover,
@@ -615,8 +403,11 @@ a {
 }
 
 .hobby-card h3 {
+  padding-top: 3px;
+  font-weight: bold;
   font-family: 'Poppins', sans-serif;
   font-size: 25px;
+  transition: color 0.3s ease;
 }
 
 .hobby-card p {
@@ -628,12 +419,14 @@ a {
   max-width: 500px;
   margin: 0 auto;
   padding-top: 45px;
+  font-family: 'Inter', sans-serif;
   text-align: center;
   line-height: 1.5;
 }
 
 .tech-legends {
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
@@ -654,6 +447,8 @@ a {
   justify-content: center;
   gap: 20px;
   margin-top: 30px;
+  padding: 0 20px;
+  margin-bottom: 100px;
   flex-wrap: wrap;
 }
 
@@ -667,7 +462,7 @@ a {
   border-radius: 10px;
   padding: 20px;
   background: #404040;
-  transition: 0.3s ease;
+  font-family: 'Inter', sans-serif;
 }
 
 .tech-card img {
@@ -715,6 +510,7 @@ a {
   align-items: center;
   gap: 15px;
   color: #E0E0E0;
+  font-family: 'Inter', sans-serif;
   text-align: center;
 }
 
@@ -732,7 +528,6 @@ a {
 .certificate-image-button img {
   width: 100%;
   border-radius: 5px;
-  transition: transform 0.3s ease;
 }
 
 .certificate-image-button img:hover {
@@ -822,6 +617,7 @@ a {
 
 .social-links {
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 10px;
   margin-top: 65px;
@@ -830,6 +626,7 @@ a {
 .social-link {
   display: flex;
   width: 190px;
+  height: 35px;
   align-items: center;
   justify-content: center;
   gap: 8px;
@@ -837,7 +634,10 @@ a {
   padding: 8px;
   background: #404040;
   color: #E0E0E0;
-  transition: 0.3s ease;
+  margin: 5px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .social-link:hover {
@@ -869,6 +669,135 @@ a {
   color: #7D7D7D;
   font-size: 6rem;
   font-weight: bold;
+}
+
+/* DaisyUI navbar structure with the portfolio's existing visual style. */
+.portfolio-navbar {
+  min-height: 65px;
+  padding: 0 20px;
+  background: #404040;
+  color: #E0E0E0;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  box-shadow: none;
+}
+
+.portfolio-navbar .navbar-start,
+.portfolio-navbar .navbar-end {
+  flex: 1;
+}
+
+.portfolio-navbar .navbar-center {
+  flex: none;
+}
+
+.portfolio-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #E0E0E0;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.portfolio-logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.portfolio-nav-links {
+  gap: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.portfolio-nav-links a,
+.portfolio-mobile-menu a {
+  display: block;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: #E0E0E0;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.portfolio-nav-links a:hover,
+.portfolio-nav-links a.router-link-active,
+.portfolio-mobile-menu a:hover,
+.portfolio-mobile-menu a.router-link-active {
+  background: #5A5A5A;
+  color: #FFFFFF;
+}
+
+.portfolio-navbar .navbar-burger {
+  display: inline-flex;
+  min-height: 35px;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: #E0E0E0;
+}
+
+.portfolio-navbar .navbar-burger:hover {
+  background: #5A5A5A;
+  color: #FFFFFF;
+}
+
+.portfolio-mobile-menu {
+  position: absolute;
+  top: 65px;
+  left: -20px;
+  z-index: 1001;
+  width: 100vw;
+  border-radius: 0;
+  padding: 10px;
+  background: #5A5A5A;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-navbar .contact-link {
+  min-height: 35px;
+  border: 0;
+  border-radius: 4px;
+  padding: 8px 15px;
+  background: #2B2B2B;
+  color: #E0E0E0;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.portfolio-navbar .contact-link:hover,
+.portfolio-navbar .contact-link.router-link-active {
+  background: #5A5A5A;
+  color: #FFFFFF;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hobby-card,
+  .tech-card {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .certificate-image-button img {
+    transition: transform 0.3s ease;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body *,
+  body *::before,
+  body *::after {
+    transition-duration: 0.01ms;
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+  }
 }
 
 @media (max-width: 768px) {
